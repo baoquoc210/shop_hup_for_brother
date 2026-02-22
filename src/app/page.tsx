@@ -15,7 +15,7 @@ export default function Home() {
         <div className="relative grid items-center gap-10 md:grid-cols-2">
           <div className="space-y-6">
             <Badge className="border-transparent bg-brand text-brand-foreground">
-              ShopHub Beauty (demo)
+              Khanh's Studio Beauty (demo)
             </Badge>
             <h1 className="text-3xl font-bold leading-[1.15] tracking-tight md:text-5xl">
               Mỹ phẩm dịu nhẹ — đẹp tự nhiên mỗi ngày.

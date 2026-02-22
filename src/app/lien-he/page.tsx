@@ -8,11 +8,12 @@ export default function ContactPage() {
     >
       <div className="space-y-2 text-sm text-muted-foreground">
         <div>
-          <span className="font-semibold text-foreground">Tên shop:</span> ShopHub
+          <span className="font-semibold text-foreground">Tên shop:</span>{" "}
+          Khanh's Studio
         </div>
         <div>
           <span className="font-semibold text-foreground">Email:</span>{" "}
-          support@shophub.demo
+          support@khanhsstudio.demo
         </div>
         <div>
           <span className="font-semibold text-foreground">Hotline:</span> 0900 000 000

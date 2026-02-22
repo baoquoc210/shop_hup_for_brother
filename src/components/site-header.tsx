@@ -104,10 +104,10 @@ export function SiteHeader() {
 
         <Link href="/" className="flex items-center gap-2">
           <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-brand text-brand-foreground font-bold">
-            S
+            K
           </span>
           <span className="hidden text-sm font-semibold tracking-tight sm:inline">
-            ShopHub
+            Khanh's Studio
           </span>
         </Link>
 

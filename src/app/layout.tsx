@@ -20,17 +20,17 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "ShopHub",
-    template: "%s | ShopHub",
+    default: "Khanh's Studio",
+    template: "%s | Khanh's Studio",
   },
   description:
-    "ShopHub Beauty (demo) — mỹ phẩm nữ: tìm kiếm, lọc, xem chi tiết, thêm giỏ hàng và checkout giả lập.",
+    "Khanh's Studio Beauty (demo) — mỹ phẩm nữ: tìm kiếm, lọc, xem chi tiết, thêm giỏ hàng và checkout giả lập.",
 };
 
 const THEME_INIT_SCRIPT = `
 (() => {
   try {
-    const key = "shophub_theme";
+    const key = "khanhs_studio_theme";
     const stored = localStorage.getItem(key);
     const theme = stored || "system";
     const mql = window.matchMedia("(prefers-color-scheme: dark)");

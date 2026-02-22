@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 
 type ThemeSetting = "system" | "light" | "dark";
 
-const THEME_KEY = "shophub_theme";
+const THEME_KEY = "khanhs_studio_theme";
 
 function getStoredTheme(): ThemeSetting {
   if (typeof window === "undefined") return "system";

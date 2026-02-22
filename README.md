@@ -1,4 +1,4 @@
-# ShopHub (Frontend)
+# Khanh's Studio (Frontend)
 
 Website e‑commerce **frontend-only** xây bằng **Next.js (App Router)** + **Tailwind CSS**.  
 Tập trung vào UX mua sắm đơn giản: duyệt sản phẩm → xem chi tiết → thêm giỏ → checkout (demo) → theo dõi đơn (demo).

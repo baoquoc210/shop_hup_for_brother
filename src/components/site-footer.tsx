@@ -32,7 +32,7 @@ export function SiteFooter() {
         <div className="grid gap-10 md:grid-cols-4">
           <div className="space-y-3">
             <div className="text-base font-semibold tracking-tight">
-              ShopHub
+              Khanh's Studio
             </div>
             <p className="text-sm text-muted-foreground">
               Demo frontend e‑commerce: trải nghiệm mượt, đơn giản, dễ mua. Không
@@ -77,7 +77,7 @@ export function SiteFooter() {
 
         <div className="mt-10 flex flex-col gap-2 border-t border-border pt-6 text-xs text-muted-foreground md:flex-row md:items-center md:justify-between">
           <div>
-            © {new Date().getFullYear()} ShopHub. Tất cả quyền được bảo lưu.
+            © {new Date().getFullYear()} Khanh's Studio. Tất cả quyền được bảo lưu.
           </div>
           <div className="flex gap-4">
             <FooterLink href="/dieu-khoan">Điều khoản</FooterLink>

@@ -22,7 +22,7 @@ export type Order = {
   status: "Đã tạo" | "Đang xử lý" | "Đang giao" | "Hoàn tất";
 };
 
-const ORDERS_KEY = "shophub_orders_v1";
+const ORDERS_KEY = "khanhs_studio_orders_v1";
 
 function safeParseJson<T>(value: string | null): T | null {
   if (!value) return null;

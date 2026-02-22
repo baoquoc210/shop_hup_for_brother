@@ -13,7 +13,7 @@ type UserProfile = {
   phone?: string;
 };
 
-const USER_KEY = "shophub_user_v1";
+const USER_KEY = "khanhs_studio_user_v1";
 
 function loadUser(): UserProfile | null {
   if (typeof window === "undefined") return null;

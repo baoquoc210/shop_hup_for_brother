@@ -34,8 +34,8 @@ type ShopContextValue = {
 
 const ShopContext = createContext<ShopContextValue | null>(null);
 
-const CART_KEY = "shophub_cart_v1";
-const WISHLIST_KEY = "shophub_wishlist_v1";
+const CART_KEY = "khanhs_studio_cart_v1";
+const WISHLIST_KEY = "khanhs_studio_wishlist_v1";
 
 function safeParseJson<T>(value: string | null): T | null {
   if (!value) return null;
