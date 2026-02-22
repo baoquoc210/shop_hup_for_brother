@@ -74,12 +74,12 @@ export function ProductPurchasePanel({ product }: { product: Product }) {
           className={cn(
             "inline-flex h-11 w-11 items-center justify-center rounded-2xl border transition",
             liked
-              ? "border-rose-200 bg-rose-50 text-rose-700"
+              ? "border-brand bg-muted text-brand"
               : "border-border bg-card text-muted-foreground hover:bg-muted",
           )}
           aria-label={liked ? "Bỏ yêu thích" : "Thêm yêu thích"}
         >
-          <Heart className={cn("h-5 w-5", liked && "fill-rose-600")} />
+          <Heart className={cn("h-5 w-5", liked && "fill-brand")} />
         </button>
       </div>
 
@@ -112,7 +112,7 @@ export function ProductPurchasePanel({ product }: { product: Product }) {
                   Đã chọn: <span className="font-semibold">{optionValue}</span>
                 </div>
               ) : (
-                <div className="text-sm text-rose-600">Chưa chọn</div>
+                <div className="text-sm text-brand">Chưa chọn</div>
               )}
             </div>
             <div className="flex flex-wrap gap-2">
@@ -174,7 +174,7 @@ export function ProductPurchasePanel({ product }: { product: Product }) {
         </div>
 
         <div className="mt-4 flex items-start gap-3 rounded-2xl border border-border bg-muted p-4 text-sm text-muted-foreground">
-          <ShieldCheck className="mt-0.5 h-5 w-5 text-emerald-600" />
+          <ShieldCheck className="mt-0.5 h-5 w-5 text-brand" />
           <div>
             <div className="font-semibold text-foreground">Yên tâm mua sắm</div>
             <div className="mt-1 text-sm text-muted-foreground">

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | ShopHub",
   },
   description:
-    "Website e‑commerce frontend (demo) — tìm kiếm, lọc, xem chi tiết, thêm giỏ hàng và checkout giả lập.",
+    "ShopHub Beauty (demo) — mỹ phẩm nữ: tìm kiếm, lọc, xem chi tiết, thêm giỏ hàng và checkout giả lập.",
 };
 
 const THEME_INIT_SCRIPT = `
@@ -58,7 +58,7 @@ export default function RootLayout({
           <div className="min-h-dvh">
             <Suspense
               fallback={
-                <div className="border-b border-white/10 bg-zinc-950 text-white">
+                <div className="border-b border-border bg-card text-foreground">
                   <div className="mx-auto w-full max-w-6xl px-4 py-8" />
                 </div>
               }

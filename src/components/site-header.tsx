@@ -33,8 +33,8 @@ function NavLink({
       href={href}
       onClick={onClick}
       className={cn(
-        "text-sm font-medium text-zinc-200/90 hover:text-white transition-colors",
-        active && "text-white",
+        "text-sm font-medium text-muted-foreground hover:text-foreground transition-colors",
+        active && "text-foreground",
       )}
     >
       {children}
@@ -59,10 +59,11 @@ export function SiteHeader() {
   const categoryLinks = useMemo(
     () =>
       CATEGORIES.map((c) => ({
+        key: c.key,
         label: c.label,
         href: `/san-pham?danhMuc=${encodeURIComponent(c.key)}`,
       })),
-    [],
+    [CATEGORIES],
   );
 
   function submitSearch(e: React.FormEvent) {
@@ -74,17 +75,17 @@ export function SiteHeader() {
   }
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-zinc-950 text-white">
-      <div className="bg-zinc-900/70">
-        <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-3 px-4 py-2 text-xs text-zinc-200">
+    <header className="sticky top-0 z-50 w-full border-b border-border bg-card text-foreground">
+      <div className="bg-muted">
+        <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-3 px-4 py-2 text-xs text-muted-foreground">
           <div className="hidden sm:block">
             Miễn phí vận chuyển nội thành cho đơn từ 499.000đ
           </div>
           <div className="flex items-center gap-4">
-            <Link className="hover:text-white transition-colors" href="/tro-giup">
+            <Link className="hover:text-foreground transition-colors" href="/tro-giup">
               Trợ giúp
             </Link>
-            <Link className="hover:text-white transition-colors" href="/don-hang">
+            <Link className="hover:text-foreground transition-colors" href="/don-hang">
               Theo dõi đơn
             </Link>
           </div>
@@ -94,7 +95,7 @@ export function SiteHeader() {
       <div className="mx-auto flex w-full max-w-6xl items-center gap-3 px-4 py-4">
         <button
           type="button"
-          className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 md:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-card hover:bg-muted md:hidden"
           aria-label={mobileOpen ? "Đóng menu" : "Mở menu"}
           onClick={() => setMobileOpen((v) => !v)}
         >
@@ -114,12 +115,12 @@ export function SiteHeader() {
           onSubmit={submitSearch}
           className="relative ml-auto hidden w-full max-w-xl md:block"
         >
-          <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-zinc-400" />
+          <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
           <input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Tìm sản phẩm, thương hiệu, danh mục…"
-            className="h-11 w-full rounded-full border border-white/10 bg-white/5 pl-10 pr-4 text-sm text-white placeholder:text-zinc-400 outline-none ring-0 transition focus:border-white/20 focus:bg-white/10"
+            className="h-11 w-full rounded-full border border-border bg-background pl-10 pr-4 text-sm text-foreground placeholder:text-muted-foreground outline-none transition focus:ring-2 focus:ring-ring/30"
             aria-label="Tìm kiếm"
           />
         </form>
@@ -127,24 +128,24 @@ export function SiteHeader() {
         <div className="ml-auto flex items-center gap-2 md:ml-0">
           <Link
             href="/yeu-thich"
-            className="inline-flex h-10 items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-3 text-sm hover:bg-white/10"
+            className="inline-flex h-10 items-center gap-2 rounded-xl border border-border bg-card px-3 text-sm text-foreground transition-colors hover:bg-muted"
           >
             <Heart className="h-4 w-4" />
             <span className="hidden sm:inline">Yêu thích</span>
             {wishlistCount > 0 ? (
-              <span className="ml-1 inline-flex min-w-5 items-center justify-center rounded-full bg-white/15 px-1.5 py-0.5 text-[11px] leading-none text-white">
+              <span className="ml-1 inline-flex min-w-5 items-center justify-center rounded-full bg-muted px-1.5 py-0.5 text-[11px] leading-none text-foreground">
                 {wishlistCount}
               </span>
             ) : null}
           </Link>
           <Link
             href="/gio-hang"
-            className="inline-flex h-10 items-center gap-2 rounded-lg bg-white px-3 text-sm font-semibold text-zinc-950 hover:bg-zinc-200"
+            className="inline-flex h-10 items-center gap-2 rounded-xl bg-primary px-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
           >
             <ShoppingBag className="h-4 w-4" />
             <span className="hidden sm:inline">Giỏ hàng</span>
             {cartCount > 0 ? (
-              <span className="ml-1 inline-flex min-w-5 items-center justify-center rounded-full bg-zinc-950 px-1.5 py-0.5 text-[11px] leading-none text-white">
+              <span className="ml-1 inline-flex min-w-5 items-center justify-center rounded-full bg-primary-foreground px-1.5 py-0.5 text-[11px] leading-none text-primary">
                 {cartCount}
               </span>
             ) : null}
@@ -152,7 +153,7 @@ export function SiteHeader() {
           <ThemeToggle />
           <Link
             href="/tai-khoan"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 hover:bg-white/10"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-card text-foreground transition-colors hover:bg-muted"
             aria-label="Tài khoản"
           >
             <UserRound className="h-4 w-4" />
@@ -160,7 +161,7 @@ export function SiteHeader() {
         </div>
       </div>
 
-      <nav className="hidden border-t border-white/10 bg-zinc-950 md:block">
+      <nav className="hidden border-t border-border bg-card md:block">
         <div className="mx-auto flex w-full max-w-6xl items-center gap-6 px-4 py-3">
           <NavLink href="/san-pham" active={pathname === "/san-pham"}>
             Tất cả
@@ -169,16 +170,16 @@ export function SiteHeader() {
             <NavLink
               key={c.href}
               href={c.href}
-              active={searchParams.get("danhMuc") === c.label}
+              active={searchParams.get("danhMuc") === c.key}
             >
               {c.label}
             </NavLink>
           ))}
-          <div className="ml-auto flex items-center gap-4 text-xs text-zinc-300">
-            <Link className="hover:text-white transition-colors" href="/khuyen-mai">
+          <div className="ml-auto flex items-center gap-4 text-xs text-muted-foreground">
+            <Link className="hover:text-foreground transition-colors" href="/khuyen-mai">
               Khuyến mãi
             </Link>
-            <Link className="hover:text-white transition-colors" href="/hang-moi">
+            <Link className="hover:text-foreground transition-colors" href="/hang-moi">
               Hàng mới
             </Link>
           </div>
@@ -186,15 +187,15 @@ export function SiteHeader() {
       </nav>
 
       {mobileOpen ? (
-        <div className="border-t border-white/10 bg-zinc-950 md:hidden">
+        <div className="border-t border-border bg-card md:hidden">
           <div className="mx-auto w-full max-w-6xl px-4 py-4">
             <form onSubmit={submitSearch} className="relative">
-              <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-zinc-400" />
+              <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
               <input
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Tìm sản phẩm…"
-                className="h-11 w-full rounded-xl border border-white/10 bg-white/5 pl-10 pr-4 text-sm text-white placeholder:text-zinc-400 outline-none focus:border-white/20 focus:bg-white/10"
+                className="h-11 w-full rounded-xl border border-border bg-background pl-10 pr-4 text-sm text-foreground placeholder:text-muted-foreground outline-none transition focus:ring-2 focus:ring-ring/30"
                 aria-label="Tìm kiếm"
               />
             </form>
@@ -203,14 +204,14 @@ export function SiteHeader() {
               <Link
                 href="/san-pham"
                 onClick={() => setMobileOpen(false)}
-                className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium hover:bg-white/10"
+                className="rounded-xl border border-border bg-card px-4 py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted"
               >
                 Tất cả sản phẩm
               </Link>
               <Link
                 href="/khuyen-mai"
                 onClick={() => setMobileOpen(false)}
-                className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium hover:bg-white/10"
+                className="rounded-xl border border-border bg-card px-4 py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted"
               >
                 Khuyến mãi
               </Link>
@@ -219,7 +220,7 @@ export function SiteHeader() {
                   key={c.href}
                   href={c.href}
                   onClick={() => setMobileOpen(false)}
-                  className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium hover:bg-white/10"
+                  className="rounded-xl border border-border bg-card px-4 py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted"
                 >
                   {c.label}
                 </Link>
@@ -230,7 +231,7 @@ export function SiteHeader() {
               <Link
                 href="/tai-khoan"
                 onClick={() => setMobileOpen(false)}
-                className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold hover:bg-white/10"
+                className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl border border-border bg-card px-4 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-muted"
               >
                 <UserRound className="h-4 w-4" />
                 Tài khoản
@@ -238,7 +239,7 @@ export function SiteHeader() {
               <Link
                 href="/gio-hang"
                 onClick={() => setMobileOpen(false)}
-                className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-zinc-950 hover:bg-zinc-200"
+                className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
               >
                 <ShoppingBag className="h-4 w-4" />
                 Giỏ hàng

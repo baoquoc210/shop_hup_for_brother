@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { CATEGORIES } from "@/lib/products";
 import { cn } from "@/lib/utils";
 
 function FooterLink({
@@ -42,10 +43,14 @@ export function SiteFooter() {
           <div className="space-y-3">
             <div className="text-sm font-semibold">Danh mục</div>
             <div className="grid gap-2">
-              <FooterLink href="/san-pham?danhMuc=Giày">Giày</FooterLink>
-              <FooterLink href="/san-pham?danhMuc=Áo">Áo</FooterLink>
-              <FooterLink href="/san-pham?danhMuc=Túi">Túi</FooterLink>
-              <FooterLink href="/san-pham?danhMuc=Phụ kiện">Phụ kiện</FooterLink>
+              {CATEGORIES.map((c) => (
+                <FooterLink
+                  key={c.key}
+                  href={`/san-pham?danhMuc=${encodeURIComponent(c.key)}`}
+                >
+                  {c.label}
+                </FooterLink>
+              ))}
             </div>
           </div>
 

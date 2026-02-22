@@ -62,7 +62,7 @@ export function ThemeToggle({ className }: { className?: string }) {
       type="button"
       onClick={cycle}
       className={cn(
-        "inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-white hover:bg-white/10",
+        "inline-flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-card text-foreground transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/40",
         className,
       )}
       aria-label={label}

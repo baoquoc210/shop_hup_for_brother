@@ -15,7 +15,7 @@ export default function NewArrivalsPage() {
   return (
     <div className="space-y-6">
       <div className="rounded-3xl border border-border bg-card p-8 md:p-10">
-        <Badge className="border-transparent bg-emerald-600 text-white">
+        <Badge className="border-transparent bg-brand text-brand-foreground">
           Hàng mới (demo)
         </Badge>
         <h1 className="mt-3 text-2xl font-extrabold tracking-tight md:text-3xl">

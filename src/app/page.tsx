@@ -10,51 +10,51 @@ export default function Home() {
 
   return (
     <div className="space-y-12">
-      <section className="relative overflow-hidden rounded-3xl border border-white/10 bg-zinc-950 px-6 py-12 text-white md:px-10 md:py-16">
-        <div className="absolute inset-0 opacity-30 [background:radial-gradient(700px_circle_at_20%_20%,var(--brand),transparent_60%),radial-gradient(900px_circle_at_80%_30%,#60a5fa,transparent_55%),radial-gradient(700px_circle_at_40%_90%,#f472b6,transparent_55%)]" />
+      <section className="relative overflow-hidden rounded-3xl border border-border bg-card px-6 py-12 md:px-10 md:py-16">
+        <div className="absolute inset-0 opacity-40 [background:radial-gradient(700px_circle_at_20%_20%,var(--brand),transparent_60%),radial-gradient(900px_circle_at_80%_30%,var(--primary),transparent_55%),radial-gradient(700px_circle_at_40%_90%,var(--muted),transparent_55%)]" />
         <div className="relative grid items-center gap-10 md:grid-cols-2">
           <div className="space-y-6">
-            <Badge className="border-white/15 bg-white/10 text-white">
-              Shop Hub
+            <Badge className="border-transparent bg-brand text-brand-foreground">
+              ShopHub Beauty (demo)
             </Badge>
             <h1 className="text-3xl font-bold leading-[1.15] tracking-tight md:text-5xl">
-              Mua nhanh – đúng gu – giá rõ ràng.
+              Mỹ phẩm dịu nhẹ — đẹp tự nhiên mỗi ngày.
             </h1>
-            <p className="max-w-prose text-sm leading-6 text-zinc-200 md:text-base">
-              Chọn sản phẩm, lọc theo danh mục, thêm giỏ hàng và checkout giả lập
-              trong vài cú click. Giao diện hiện đại, tập trung vào trải nghiệm
-              mua sắm.
+            <p className="max-w-prose text-sm leading-6 text-muted-foreground md:text-base">
+              Chọn skincare, trang điểm và nước hoa theo nhu cầu. Lọc nhanh, thêm
+              giỏ 1 chạm và checkout giả lập trong vài cú click — tối ưu cho
+              mobile.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/san-pham"
-                className="inline-flex h-12 items-center justify-center gap-2 rounded-2xl bg-white px-5 text-sm font-semibold text-zinc-950 hover:bg-zinc-200"
+                className="inline-flex h-12 items-center justify-center gap-2 rounded-2xl bg-primary px-5 text-sm font-semibold text-primary-foreground hover:bg-primary/90"
               >
-                Khám phá sản phẩm <ArrowRight className="h-4 w-4" />
+                Khám phá mỹ phẩm <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
                 href="/khuyen-mai"
-                className="inline-flex h-12 items-center justify-center gap-2 rounded-2xl border border-white/15 bg-white/10 px-5 text-sm font-semibold text-white hover:bg-white/15"
+                className="inline-flex h-12 items-center justify-center gap-2 rounded-2xl bg-brand px-5 text-sm font-semibold text-brand-foreground hover:bg-brand/90"
               >
                 Xem khuyến mãi <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
             <div className="grid gap-3 pt-2 sm:grid-cols-3">
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <div className="rounded-2xl border border-border bg-muted p-4">
                 <div className="text-sm font-semibold">Kiểm tra nhanh</div>
-                <div className="mt-1 text-xs text-zinc-300">
+                <div className="mt-1 text-xs text-muted-foreground">
                   Tóm tắt thông tin rõ ràng
                 </div>
               </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <div className="rounded-2xl border border-border bg-muted p-4">
                 <div className="text-sm font-semibold">Thêm giỏ 1 chạm</div>
-                <div className="mt-1 text-xs text-zinc-300">
+                <div className="mt-1 text-xs text-muted-foreground">
                   Lưu giỏ hàng bằng trình duyệt
                 </div>
               </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <div className="rounded-2xl border border-border bg-muted p-4">
                 <div className="text-sm font-semibold">Checkout gọn</div>
-                <div className="mt-1 text-xs text-zinc-300">
+                <div className="mt-1 text-xs text-muted-foreground">
                   Form tối ưu cho mobile
                 </div>
               </div>
@@ -66,15 +66,15 @@ export default function Home() {
               <Link
                 key={p.id}
                 href={`/san-pham/${p.slug}`}
-                className="group rounded-3xl border border-white/10 bg-white/5 p-4 transition hover:bg-white/10"
+                className="group rounded-3xl border border-border bg-muted p-4 transition hover:bg-secondary"
               >
-                <div className="text-xs font-semibold text-zinc-200">
+                <div className="text-xs font-semibold text-muted-foreground">
                   {p.brand}
                 </div>
                 <div className="mt-1 line-clamp-2 text-sm font-semibold leading-6">
                   {p.name}
                 </div>
-                <div className="mt-3 inline-flex items-center gap-2 text-xs text-zinc-300">
+                <div className="mt-3 inline-flex items-center gap-2 text-xs text-muted-foreground">
                   Xem ngay <ArrowRight className="h-3.5 w-3.5 transition group-hover:translate-x-0.5" />
                 </div>
               </Link>
@@ -144,7 +144,7 @@ export default function Home() {
       <section className="grid gap-4 md:grid-cols-3">
         <div className="rounded-3xl border border-border bg-card p-6">
           <div className="flex items-center gap-3">
-            <div className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-emerald-500/10 text-emerald-600">
+            <div className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-brand text-brand-foreground">
               <BadgeCheck className="h-5 w-5" />
             </div>
             <div>
@@ -170,7 +170,7 @@ export default function Home() {
         </div>
         <div className="rounded-3xl border border-border bg-card p-6">
           <div className="flex items-center gap-3">
-            <div className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-rose-500/10 text-rose-600">
+            <div className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-muted text-brand">
               <RotateCcw className="h-5 w-5" />
             </div>
             <div>

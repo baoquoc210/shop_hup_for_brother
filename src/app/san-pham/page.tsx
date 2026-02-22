@@ -169,7 +169,7 @@ function ProductListingClient() {
                 onKeyDown={(e) => {
                   if (e.key === "Enter") applyToUrl({ query });
                 }}
-                placeholder="Ví dụ: sneaker, hoodie, túi…"
+                placeholder="Ví dụ: serum, son, kem chống nắng…"
                 className="pl-11"
               />
             </div>

@@ -12,7 +12,7 @@ export default async function OrderSuccessPage({
   return (
     <div className="mx-auto max-w-2xl">
       <div className="rounded-3xl border border-border bg-card p-10 text-center">
-        <div className="mx-auto inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-500/10 text-emerald-600">
+        <div className="mx-auto inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-brand/25 text-foreground">
           <CheckCircle2 className="h-7 w-7" />
         </div>
         <div className="mt-4 text-2xl font-extrabold tracking-tight text-foreground">

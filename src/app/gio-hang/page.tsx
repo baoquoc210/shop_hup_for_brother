@@ -8,7 +8,6 @@ import { SafeImage } from "@/components/safe-image";
 import { Button } from "@/components/ui/button";
 import { formatVnd } from "@/lib/money";
 import { PRODUCTS } from "@/lib/products";
-import { cn } from "@/lib/utils";
 
 export default function CartPage() {
   const { cart, setLineQuantity, removeFromCart, clearCart } = useShop();
@@ -202,12 +201,7 @@ export default function CartPage() {
                 </div>
                 <div className="flex items-center justify-between text-muted-foreground">
                   <span>Vận chuyển</span>
-                  <span
-                    className={cn(
-                      "font-semibold",
-                      shipping === 0 ? "text-emerald-600" : "text-foreground",
-                    )}
-                  >
+                  <span className="font-semibold text-foreground">
                     {shipping === 0 ? "Miễn phí" : formatVnd(shipping)}
                   </span>
                 </div>

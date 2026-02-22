@@ -53,9 +53,9 @@ export function ProductCard({ product }: { product: Product }) {
                 className={cn(
                   "border-transparent",
                   b === "Giảm giá"
-                    ? "bg-rose-600 text-white"
+                    ? "bg-brand text-brand-foreground"
                     : b === "Bán chạy"
-                      ? "bg-zinc-950 text-white"
+                      ? "bg-primary text-primary-foreground"
                       : "bg-card text-foreground",
                 )}
               >
@@ -73,15 +73,15 @@ export function ProductCard({ product }: { product: Product }) {
           toast(liked ? "Đã xoá khỏi yêu thích" : "Đã thêm vào yêu thích", "info");
         }}
         className={cn(
-          "absolute right-3 top-3 inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-card/90 backdrop-blur transition hover:bg-card",
-          liked && "border-rose-200 bg-rose-50",
+          "absolute right-3 top-3 inline-flex h-10 w-10 items-center justify-center rounded-full border border-border bg-card transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/25",
+          liked && "border-brand bg-muted",
         )}
         aria-label={liked ? "Bỏ yêu thích" : "Thêm yêu thích"}
       >
         <Heart
           className={cn(
             "h-4 w-4",
-            liked ? "fill-rose-600 text-rose-600" : "text-muted-foreground",
+            liked ? "fill-brand text-brand" : "text-muted-foreground",
           )}
         />
       </button>
