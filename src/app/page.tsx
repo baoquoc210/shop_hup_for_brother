@@ -83,6 +83,67 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
+        <div className="rounded-3xl border border-border bg-card p-6 md:p-8">
+          <Badge className="border-transparent bg-muted text-foreground">
+            Lời nói đầu
+          </Badge>
+          <h2 className="mt-4 text-2xl font-bold tracking-tight md:text-3xl">
+            Chào mừng bạn đến với không gian mua sắm được sắp xếp gọn gàng và dễ
+            lựa chọn.
+          </h2>
+          <div className="mt-4 space-y-3 text-sm leading-6 text-muted-foreground md:text-base">
+            <p>
+              Khanh&apos;s Studio hướng đến trải nghiệm mua mỹ phẩm rõ ràng, tinh
+              gọn và phù hợp với nhu cầu hằng ngày. Từ skincare, trang điểm đến
+              hương thơm và phụ kiện, mọi nhóm sản phẩm đều được trình bày trực
+              quan để bạn tìm đúng món cần thiết trong ít thao tác nhất.
+            </p>
+            <p>
+              Website ưu tiên cách thể hiện nhẹ nhàng, dễ theo dõi và tối ưu trên
+              mobile, để mỗi lần ghé xem sản phẩm đều nhanh, mạch lạc và đủ thông
+              tin trước khi thêm vào giỏ hàng.
+            </p>
+          </div>
+        </div>
+
+        <div className="grid gap-4">
+          <div className="rounded-3xl border border-border bg-muted p-6">
+            <div className="text-sm font-semibold">Lời giới thiệu</div>
+            <p className="mt-2 text-sm leading-6 text-muted-foreground">
+              Khanh&apos;s Studio theo đuổi phong cách làm đẹp hiện đại, dịu nhẹ và
+              dễ ứng dụng. Danh mục được bổ sung đồng đều để bạn có nhiều lựa
+              chọn hơn ở từng nhóm sản phẩm, đồng thời vẫn giữ được cảm giác duyệt
+              web gọn, sạch và chuyên nghiệp.
+            </p>
+          </div>
+
+          <div className="grid gap-3 sm:grid-cols-2">
+            <div className="rounded-3xl border border-border bg-card p-5">
+              <div className="text-2xl font-bold tracking-tight">
+                {PRODUCTS.length.toLocaleString("vi-VN")}+
+              </div>
+              <div className="mt-1 text-sm font-semibold">
+                Sản phẩm đã tuyển chọn
+              </div>
+              <div className="mt-1 text-xs leading-5 text-muted-foreground">
+                Phân bổ đều theo từng nhu cầu để việc khám phá thuận tiện hơn.
+              </div>
+            </div>
+
+            <div className="rounded-3xl border border-border bg-card p-5">
+              <div className="text-2xl font-bold tracking-tight">
+                {CATEGORIES.length}
+              </div>
+              <div className="mt-1 text-sm font-semibold">Danh mục rõ ràng</div>
+              <div className="mt-1 text-xs leading-5 text-muted-foreground">
+                Dễ lọc, dễ so sánh và xem nhanh trên cả desktop lẫn mobile.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="space-y-4">
         <div className="flex items-end justify-between gap-3">
           <div>
