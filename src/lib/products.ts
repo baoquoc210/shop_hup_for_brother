@@ -43,9 +43,6 @@ export const CATEGORIES: { key: Category; label: string }[] = [
   { key: "Dụng cụ", label: "Dụng cụ" },
 ];
 
-const unsplash = (photoId: string) =>
-  `https://images.unsplash.com/${photoId}?auto=format&fit=crop&w=1200&q=80`;
-
 export const PRODUCTS: Product[] = [
   {
     id: "p_skin_serum_vitc_15",
@@ -57,12 +54,8 @@ export const PRODUCTS: Product[] = [
     compareAtPrice: 449000,
     images: [
       {
-        src: unsplash("photo-1618331647258-631aa6000400"),
+        src: "https://i.pinimg.com/control1/1200x/0a/de/92/0ade92d4314fa22f320ad73c215c9e47.jpg",
         alt: "Chai serum tối giản trên nền sáng",
-      },
-      {
-        src: unsplash("photo-1618331680655-5c23b9c4d29b"),
-        alt: "Cận cảnh chai serum với ánh sáng tự nhiên",
       },
     ],
     shortDescription:
@@ -89,12 +82,8 @@ export const PRODUCTS: Product[] = [
     compareAtPrice: 329000,
     images: [
       {
-        src: unsplash("photo-1512207576147-99bc3066b621"),
+        src: "https://i.pinimg.com/736x/2c/d7/db/2cd7db448922075e41fcdabf3d3e176f.jpg",
         alt: "Tuýp kem dưỡng tối giản trên nền sáng",
-      },
-      {
-        src: unsplash("photo-1521840233161-295ed621e056"),
-        alt: "Chai mỹ phẩm tối giản đặt trên nền pastel",
       },
     ],
     shortDescription:
@@ -121,12 +110,8 @@ export const PRODUCTS: Product[] = [
     compareAtPrice: 289000,
     images: [
       {
-        src: unsplash("photo-1594125311687-3b1b3eafa9f4"),
+        src: "https://i.pinimg.com/736x/69/aa/4b/69aa4bc63628177b805ffde02dd36789.jpg",
         alt: "Son môi chụp cận trên nền tối giản",
-      },
-      {
-        src: unsplash("photo-1526947425960-945c6e72858f"),
-        alt: "Bảng phấn trang điểm chụp cận",
       },
     ],
     shortDescription:
@@ -152,12 +137,8 @@ export const PRODUCTS: Product[] = [
     price: 239000,
     images: [
       {
-        src: unsplash("photo-1503236823255-94609f598e71"),
+        src: "https://i.pinimg.com/1200x/56/db/7c/56db7caeb578c71389a43b4595701f1f.jpg",
         alt: "Cọ trang điểm đặt trên nền phấn",
-      },
-      {
-        src: unsplash("photo-1693990437433-3ec5fe554a5b"),
-        alt: "Chai mỹ phẩm tối giản trên nền sáng",
       },
     ],
     shortDescription:
@@ -184,12 +165,8 @@ export const PRODUCTS: Product[] = [
     compareAtPrice: 749000,
     images: [
       {
-        src: unsplash("photo-1594903696739-2551e8c2d0f1"),
+        src: "https://i.pinimg.com/1200x/bf/2a/93/bf2a93b38894790e7ed6b145a5c22d0f.jpg",
         alt: "Chai nước hoa tối giản chụp cận",
-      },
-      {
-        src: unsplash("photo-1605980766335-d3a41c7332a1"),
-        alt: "Chai nước hoa trên nền sáng",
       },
     ],
     shortDescription:
@@ -215,12 +192,8 @@ export const PRODUCTS: Product[] = [
     price: 199000,
     images: [
       {
-        src: unsplash("photo-1453761816053-ed5ba727b5b7"),
+        src: "https://i.pinimg.com/736x/53/45/c7/5345c7735ef82d3713aee0fbc6c90f10.jpg",
         alt: "Chai xịt tối giản trên nền sáng",
-      },
-      {
-        src: unsplash("photo-1693990437506-dac9d69697a9"),
-        alt: "Chai mỹ phẩm tối giản đặt trên nền pastel",
       },
     ],
     shortDescription:
@@ -246,12 +219,8 @@ export const PRODUCTS: Product[] = [
     price: 289000,
     images: [
       {
-        src: unsplash("photo-1693990437462-7374feb1fd9f"),
+        src: "https://i.pinimg.com/736x/f8/72/86/f872869f4089ca32580560b722cb7ab0.jpg",
         alt: "Chai dầu gội tối giản trên nền sáng",
-      },
-      {
-        src: unsplash("photo-1594813591867-02e797aa4581"),
-        alt: "Mái tóc uốn gợn sóng chụp cận",
       },
     ],
     shortDescription:
@@ -278,12 +247,8 @@ export const PRODUCTS: Product[] = [
     compareAtPrice: 319000,
     images: [
       {
-        src: unsplash("photo-1693990437531-720851467ffe"),
+        src: "https://i.pinimg.com/736x/ad/74/56/ad74564e00fe5fde5e71b1ad4786f16b.jpg",
         alt: "Chai serum tối giản chụp cận",
-      },
-      {
-        src: unsplash("photo-1618331911090-336dca45e7f0"),
-        alt: "Chai mỹ phẩm tối giản với ánh sáng tự nhiên",
       },
     ],
     shortDescription:
@@ -310,12 +275,8 @@ export const PRODUCTS: Product[] = [
     compareAtPrice: 299000,
     images: [
       {
-        src: unsplash("photo-1693990437433-3ec5fe554a5b"),
+        src: "https://i.pinimg.com/736x/93/45/bc/9345bc501e799b043bee2768fb9d5779.jpg",
         alt: "Chai lotion tối giản trên nền sáng",
-      },
-      {
-        src: unsplash("photo-1693990437462-7374feb1fd9f"),
-        alt: "Chai dưỡng thể tối giản chụp cận",
       },
     ],
     shortDescription:
@@ -341,12 +302,8 @@ export const PRODUCTS: Product[] = [
     price: 219000,
     images: [
       {
-        src: unsplash("photo-1521840233161-295ed621e056"),
+        src: "https://i.pinimg.com/736x/ad/07/42/ad07427a5dee9778386026e5f05fed64.jpg",
         alt: "Hũ/ chai mỹ phẩm tối giản trên nền pastel",
-      },
-      {
-        src: unsplash("photo-1693990437506-dac9d69697a9"),
-        alt: "Mỹ phẩm tối giản với ánh sáng tự nhiên",
       },
     ],
     shortDescription:
@@ -372,12 +329,8 @@ export const PRODUCTS: Product[] = [
     price: 329000,
     images: [
       {
-        src: unsplash("photo-1503236823255-94609f598e71"),
+        src: "https://i.pinimg.com/1200x/43/0c/fc/430cfcffb9bbfced2882434fa794c016.jpg",
         alt: "Cọ trang điểm chụp cận",
-      },
-      {
-        src: unsplash("photo-1526947425960-945c6e72858f"),
-        alt: "Bảng phấn mắt trang điểm",
       },
     ],
     shortDescription:
@@ -404,12 +357,8 @@ export const PRODUCTS: Product[] = [
     compareAtPrice: 99000,
     images: [
       {
-        src: unsplash("photo-1526947425960-945c6e72858f"),
+        src: "https://i.pinimg.com/1200x/48/57/97/4857979784184a81ca8081fa4b84a0e0.jpg",
         alt: "Phấn trang điểm chụp cận",
-      },
-      {
-        src: unsplash("photo-1618331665436-1480d7519f8f"),
-        alt: "Mỹ phẩm tối giản trên nền sáng",
       },
     ],
     shortDescription:
@@ -436,12 +385,8 @@ export const PRODUCTS: Product[] = [
     compareAtPrice: 269000,
     images: [
       {
-        src: unsplash("photo-1512207576147-99bc3066b621"),
+        src: "https://i.pinimg.com/1200x/b8/f8/db/b8f8db5e271799244da5d50e3dbafee6.jpg",
         alt: "Sữa rửa mặt dạng gel trên nền sáng",
-      },
-      {
-        src: unsplash("photo-1693990437433-3ec5fe554a5b"),
-        alt: "Chai chăm sóc da tối giản đặt trong ánh sáng mềm",
       },
     ],
     shortDescription:
@@ -467,12 +412,8 @@ export const PRODUCTS: Product[] = [
     price: 259000,
     images: [
       {
-        src: unsplash("photo-1618331680655-5c23b9c4d29b"),
+        src: "https://i.pinimg.com/1200x/46/98/67/4698671fbf560ed852c1682e93680055.jpg",
         alt: "Chai toner tối giản chụp cận với ánh sáng tự nhiên",
-      },
-      {
-        src: unsplash("photo-1618331911090-336dca45e7f0"),
-        alt: "Bộ sản phẩm skincare tông sáng tối giản",
       },
     ],
     shortDescription:
@@ -499,12 +440,8 @@ export const PRODUCTS: Product[] = [
     compareAtPrice: 389000,
     images: [
       {
-        src: unsplash("photo-1521840233161-295ed621e056"),
+        src: "https://i.pinimg.com/736x/d4/8b/9f/d48b9fbe04e5bae37fc8463353c07cd5.jpg",
         alt: "Kem dưỡng tối giản trên nền pastel sáng",
-      },
-      {
-        src: unsplash("photo-1693990437506-dac9d69697a9"),
-        alt: "Hũ kem dưỡng chụp trong ánh sáng dịu",
       },
     ],
     shortDescription:
@@ -531,12 +468,8 @@ export const PRODUCTS: Product[] = [
     compareAtPrice: 449000,
     images: [
       {
-        src: unsplash("photo-1526947425960-945c6e72858f"),
+        src: "https://i.pinimg.com/736x/91/9b/ac/919bacba9ad8bce83d13cc2a32afd98e.jpg",
         alt: "Sản phẩm nền trang điểm chụp cận trên nền sáng",
-      },
-      {
-        src: unsplash("photo-1693990437433-3ec5fe554a5b"),
-        alt: "Hộp cushion đặt cạnh mỹ phẩm tối giản",
       },
     ],
     shortDescription:
@@ -562,12 +495,8 @@ export const PRODUCTS: Product[] = [
     price: 199000,
     images: [
       {
-        src: unsplash("photo-1594125311687-3b1b3eafa9f4"),
+        src: "https://i.pinimg.com/736x/17/6b/77/176b77704a5e696a136039208137cf01.jpg",
         alt: "Mascara và son môi tối giản trên nền trung tính",
-      },
-      {
-        src: unsplash("photo-1503236823255-94609f598e71"),
-        alt: "Dụng cụ trang điểm chụp cận",
       },
     ],
     shortDescription:
@@ -594,12 +523,8 @@ export const PRODUCTS: Product[] = [
     compareAtPrice: 379000,
     images: [
       {
-        src: unsplash("photo-1526947425960-945c6e72858f"),
+        src: "https://i.pinimg.com/736x/0a/d7/f6/0ad7f6a4e4e30b138ab544e7ce5ce212.jpg",
         alt: "Bảng phấn mắt tông nude chụp cận",
-      },
-      {
-        src: unsplash("photo-1503236823255-94609f598e71"),
-        alt: "Cọ trang điểm đặt cạnh bảng phấn mắt",
       },
     ],
     shortDescription:
@@ -625,12 +550,8 @@ export const PRODUCTS: Product[] = [
     price: 179000,
     images: [
       {
-        src: unsplash("photo-1453761816053-ed5ba727b5b7"),
+        src: "https://i.pinimg.com/736x/2c/dd/76/2cdd7695b0bcfff8fe26b9aae74cacd9.jpg",
         alt: "Chai nước hoa roll-on nhỏ gọn trên nền sáng",
-      },
-      {
-        src: unsplash("photo-1594903696739-2551e8c2d0f1"),
-        alt: "Nước hoa mini chụp cận với ánh sáng mềm",
       },
     ],
     shortDescription:
@@ -657,12 +578,8 @@ export const PRODUCTS: Product[] = [
     compareAtPrice: 829000,
     images: [
       {
-        src: unsplash("photo-1605980766335-d3a41c7332a1"),
+        src: "https://i.pinimg.com/736x/d7/92/f8/d792f8f1046ae47d503b5d520783a21a.jpg",
         alt: "Chai nước hoa tông trầm đặt trên nền sáng",
-      },
-      {
-        src: unsplash("photo-1594903696739-2551e8c2d0f1"),
-        alt: "Cận cảnh chai nước hoa tối giản phong cách sang trọng",
       },
     ],
     shortDescription:
@@ -688,12 +605,8 @@ export const PRODUCTS: Product[] = [
     price: 249000,
     images: [
       {
-        src: unsplash("photo-1453761816053-ed5ba727b5b7"),
+        src: "https://i.pinimg.com/736x/a8/1c/34/a81c3485789b069dfa88f5ab610f78b5.jpg",
         alt: "Chai hair perfume dạng xịt trên nền sáng",
-      },
-      {
-        src: unsplash("photo-1693990437506-dac9d69697a9"),
-        alt: "Chai xịt hương tóc tối giản chụp cận",
       },
     ],
     shortDescription:
@@ -720,12 +633,8 @@ export const PRODUCTS: Product[] = [
     compareAtPrice: 329000,
     images: [
       {
-        src: unsplash("photo-1693990437462-7374feb1fd9f"),
+        src: "https://i.pinimg.com/736x/7e/04/e9/7e04e901fa1221b1ac9f8f7a15182977.jpg",
         alt: "Chai dầu xả tối giản trên nền sáng",
-      },
-      {
-        src: unsplash("photo-1618331911090-336dca45e7f0"),
-        alt: "Bộ sản phẩm chăm sóc tóc tông trung tính",
       },
     ],
     shortDescription:
@@ -752,12 +661,8 @@ export const PRODUCTS: Product[] = [
     compareAtPrice: 399000,
     images: [
       {
-        src: unsplash("photo-1693990437531-720851467ffe"),
+        src: "https://i.pinimg.com/736x/60/79/41/607941da1ec1a8a64e8e375713eb7278.jpg",
         alt: "Hũ ủ tóc tối giản chụp cận trên nền sáng",
-      },
-      {
-        src: unsplash("photo-1594813591867-02e797aa4581"),
-        alt: "Mái tóc mềm mượt chụp cận dưới ánh sáng tự nhiên",
       },
     ],
     shortDescription:
@@ -783,12 +688,8 @@ export const PRODUCTS: Product[] = [
     price: 249000,
     images: [
       {
-        src: unsplash("photo-1693990437506-dac9d69697a9"),
+        src: "https://i.pinimg.com/736x/9c/7b/ce/9c7bce3fcbbe08e315ae16a2e80e7729.jpg",
         alt: "Chai xịt chăm sóc tóc tối giản trên nền sáng",
-      },
-      {
-        src: unsplash("photo-1594813591867-02e797aa4581"),
-        alt: "Mái tóc uốn mềm mại chụp cận",
       },
     ],
     shortDescription:
@@ -815,12 +716,8 @@ export const PRODUCTS: Product[] = [
     compareAtPrice: 249000,
     images: [
       {
-        src: unsplash("photo-1693990437433-3ec5fe554a5b"),
+        src: "https://i.pinimg.com/736x/89/06/9b/89069be22aa2b5a12da4d906d76f25f2.jpg",
         alt: "Chai sữa tắm tối giản trên nền sáng",
-      },
-      {
-        src: unsplash("photo-1521840233161-295ed621e056"),
-        alt: "Chai body wash tối giản đặt trên nền pastel",
       },
     ],
     shortDescription:
@@ -846,12 +743,8 @@ export const PRODUCTS: Product[] = [
     price: 129000,
     images: [
       {
-        src: unsplash("photo-1693990437506-dac9d69697a9"),
+        src: "https://i.pinimg.com/736x/29/58/f1/2958f1e51fb8690568eb24dc3dc6a249.jpg",
         alt: "Tuýp kem dưỡng tay tối giản chụp cận",
-      },
-      {
-        src: unsplash("photo-1693990437433-3ec5fe554a5b"),
-        alt: "Kem dưỡng tay đặt cạnh mỹ phẩm tông sáng",
       },
     ],
     shortDescription:
@@ -878,12 +771,8 @@ export const PRODUCTS: Product[] = [
     compareAtPrice: 349000,
     images: [
       {
-        src: unsplash("photo-1693990437462-7374feb1fd9f"),
+        src: "https://i.pinimg.com/736x/8f/cf/69/8fcf690d7442bab2ccea28fdbddb12c6.jpg",
         alt: "Chai body oil tối giản trên nền sáng",
-      },
-      {
-        src: unsplash("photo-1693990437506-dac9d69697a9"),
-        alt: "Tinh dầu dưỡng thể chụp cận với ánh sáng mềm",
       },
     ],
     shortDescription:
@@ -909,12 +798,8 @@ export const PRODUCTS: Product[] = [
     price: 119000,
     images: [
       {
-        src: unsplash("photo-1503236823255-94609f598e71"),
+        src: "https://i.pinimg.com/736x/d4/81/67/d481675e73b3151e7c28def8dd3a3088.jpg",
         alt: "Dụng cụ trang điểm đặt trên nền phấn",
-      },
-      {
-        src: unsplash("photo-1526947425960-945c6e72858f"),
-        alt: "Bộ dụng cụ makeup chụp cận trên nền sáng",
       },
     ],
     shortDescription:
@@ -941,12 +826,8 @@ export const PRODUCTS: Product[] = [
     compareAtPrice: 189000,
     images: [
       {
-        src: unsplash("photo-1618331665436-1480d7519f8f"),
+        src: "https://i.pinimg.com/1200x/95/e8/11/95e81168909f79adbb0529132f48603a.jpg",
         alt: "Phụ kiện bàn trang điểm tối giản chụp cận",
-      },
-      {
-        src: unsplash("photo-1503236823255-94609f598e71"),
-        alt: "Góc bàn trang điểm với phụ kiện tông sáng",
       },
     ],
     shortDescription:
@@ -972,12 +853,8 @@ export const PRODUCTS: Product[] = [
     price: 89000,
     images: [
       {
-        src: unsplash("photo-1503236823255-94609f598e71"),
+        src: "https://i.pinimg.com/736x/01/2d/e3/012de3c38bd559939f7b26bcc273576b.jpg",
         alt: "Cọ trang điểm chụp cận trên nền sáng",
-      },
-      {
-        src: unsplash("photo-1618331665436-1480d7519f8f"),
-        alt: "Phụ kiện vệ sinh cọ đặt cùng mỹ phẩm tối giản",
       },
     ],
     shortDescription:
